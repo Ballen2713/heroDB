@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {HashRouter, Route} from 'react-router-dom';
+import Nav from './components/nav.js';
 import './App.css';
 
 class App extends Component {
   render() {
+    let navBar = [
+      {label: 'Home', link: '/Home'},
+      {label: 'Submit a Hero', link: '/Submit'},
+      {label: 'Current Heroes', link: '/Current'},
+      {label: 'Popular Heroes', link: '/Popular'},
+    ]
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <HashRouter>
+        <div className="App">
+          <Nav navBar={navBar} />
+          {
+          //<Route path='' component={}></Route>
+          //<Route path='' component={}></Route>
+          //<Route path='' component={}></Route>
+          //<Route path='' component={}></Route>
+          }
+        </div>
+      </HashRouter>
     );
   }
 }

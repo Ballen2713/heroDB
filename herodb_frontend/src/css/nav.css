@@ -1,0 +1,19 @@
+.navBar a{
+  text-decoration: none;
+  border: darkcyan;
+  border-style: solid;
+  border-radius: .3em;
+  color: white;
+  padding: .2em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.navBar ul{
+  display:flex;
+  justify-content: space-between; 
+  align-items: center;
+  list-style-type: none;
+  background: black;
+  height: 2.5em;
+}
