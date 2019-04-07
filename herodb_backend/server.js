@@ -18,6 +18,7 @@ connection.once('open', function() {
     console.log("MongoDB database connection established successfully!");
 });
 
+//default route for displaying the current heroes within the database 
 heroRoutes.route('/').get(function(req, res) { 
     Heroes.find(function(err, hero){ 
         if(err) { 
@@ -28,6 +29,7 @@ heroRoutes.route('/').get(function(req, res) {
     });
 });
 
+//returns the specified hero based on id
 heroRoutes.route('/:id').get(function(req, res) { 
     let id = req.params.id
     Heroes.findById(id, function(err, hero) { 
@@ -35,6 +37,7 @@ heroRoutes.route('/:id').get(function(req, res) {
     });
 });
 
+//adding a hero into the database 
 heroRoutes.route('/add').post(function(req, res) { 
     let hero = new Heroes(req.body);
     hero.save()
@@ -46,18 +49,19 @@ heroRoutes.route('/add').post(function(req, res) {
         });
 });
 
+//Update endpoint which allows the user to update any information about a particular hero
 heroRoutes.route('/update/:id').post(function(req, res) { 
     Heroes.findById(req.params.id, function(err, hero) { 
         if(!hero) { 
             res.status(404).send('data was not found');
         } else { 
-            hero.hero_name = req.body.hero_name;
-            hero.Name = req.body.Name;
-            hero.hero_series = req.body.hero_series;
-            hero.hero_genre = req.body.hero_genre;
-            hero.hero_medium = req.body.hero_medium;
-            hero.hero_gender = req.body.hero_gender;
-            hero.hero_skils_abilities = req.body.hero_skils_abilities;
+            hero.heroName = req.body.heroName;
+            hero.birthName = req.body.birthName;
+            hero.series = req.body.series;
+            hero.genre = req.body.genre;
+            hero.medium = req.body.medium;
+            hero.gender = req.body.gender;
+            hero.skils_abilities = req.body.skils_abilities;
 
             hero.save().then(hero => { 
                 res.json('Hero updated');
@@ -68,6 +72,17 @@ heroRoutes.route('/update/:id').post(function(req, res) {
         }
     })
 })
+
+//Delete route implemented for test purposes but won't be used 
+// heroRoutes.route('/:id').delete(function(req, res) { 
+//     Heroes.findById(req.params.id, function(err, hero){ 
+//         if(err) { 
+//             res.status(500).send(err);
+//         } else { 
+//             res.status(200).send('Hero Removed Successfully!');
+//         }
+//     })
+// })
 
 app.use('/hero', heroRoutes);
 

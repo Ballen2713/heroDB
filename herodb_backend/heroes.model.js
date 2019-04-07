@@ -3,26 +3,29 @@ const Schema = mongoose.Schema;
 
 
 let Heroes = new Schema({
-    hero_name: { 
+    heroName: { 
         type: String
     }, 
-    Name: { 
+    birthName: { 
         type: String
     },
-    hero_series: { 
-        type: String
+    series: { 
+        type:[ String],
+        default: undefined
     }, 
-    hero_genre: { 
-        type: String
+    genre: { 
+        type: [String]
     }, 
-    hero_medium: { 
+    medium: { 
+        type: [String],
+        default: undefined
+    },
+    gender: { 
         type: String
     },
-    hero_gender: { 
-        type: String
-    },
-    hero_skills_abilities: { 
-        type: String
+    skills_abilities: { 
+        type: [String],
+        default: undefined
     }
 });
 
