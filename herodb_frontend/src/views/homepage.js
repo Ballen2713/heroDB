@@ -30,6 +30,7 @@ class Home extends Component{
           <div id="flash">
             <img alt='flash' src={flash}/>
           </div>
+          <br clear="all" />
         </div>
       </div>
     );

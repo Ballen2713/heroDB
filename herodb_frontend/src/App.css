@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background: linear-gradient(180deg, #068EF1 0%, #1C00A0 100%);
 }
 
 .App-header {
@@ -16,62 +15,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-
-
-.homepage{
-  height: 2000px;
-  padding-top: 0px;
-}
-
-.header-bg{
-  height: 20em;
-  position: relative;
-  overflow: hidden;
-}
-.header-bg h1{
-  position: relative; 
-  padding: 10%;
-}
-
-.header-bg img{
-  width: 100%;
-  opacity: .3;
-  height: auto; 
-  position: absolute; 
-  left: 0; 
-  top: 0;
-}
-
-.quotes{
-  display: grid;
-  grid-template-areas: 
-      "naruto bubble1"
-      "bubble2 flash";
-}
-
-.quotes #naruto{
-  grid-area: naruto;
-  left: 0;
-  width: 60%;
-}
-.quotes #naruto img{
-
-}
-.quotes #bubble1{
-  grid-area: bubble1;
-  right: 0;
-  width: 38%;
-}
-.quotes #flash{
-  grid-area: flash;
-  left: 0 ;
-  width: 60%
-}
-
-.quotes #bubble2{
-  grid-area: bubble2;
-  left: 0; 
-  width: 38%;
 }

@@ -3,7 +3,7 @@
   border: none;
   border-style: none;
   border-radius: .3em;
-  color: black;
+  color: white;
   padding: .2em;
   padding-left: .5em;
   padding-right: .5em;
@@ -17,6 +17,7 @@
   background: none;
   height: 2.5em;
   margin: 0;
+  padding: 0;
 }
 
 .navBar{
@@ -24,4 +25,7 @@
   width: 100%;
   top: 0;
   z-index: 10;
+}
+li{
+  font-size: calc((30vw - 8.5rem) / 7);
 }
