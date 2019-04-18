@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-
-let Heroes = new Schema({
+// Create Schema
+const HeroSchema = new Schema({
     heroName: { 
         type: String
     }, 
@@ -29,4 +29,4 @@ let Heroes = new Schema({
     }
 });
 
-module.exports = mongoose.model('Heroes', Heroes);
+module.exports = Hero = mongoose.model('hero', HeroSchema);
