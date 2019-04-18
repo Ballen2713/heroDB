@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Mui from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
-import RadioGroup	from 'material-ui/core/RadioGroup'
 import RaisedButton from 'material-ui/RaisedButton';
 
 export class FormUserDetails extends Component {
@@ -30,10 +29,6 @@ export class FormUserDetails extends Component {
 						floatingLabelText="Actual Name"
 						onChange={handleChange('lastName')}
 						defaultValue={values.lastName}
-					/>
-					<br/>
-					<RadioGroup
-
 					/>
 					<br/>
 					<TextField
