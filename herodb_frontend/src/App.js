@@ -17,7 +17,7 @@ class App extends Component {
       <HashRouter>
         <div className="App">
           <Nav navBar={navBar} />
-          <div>
+          <div style={{top: '2.5em', position: 'relative'}}>
             <Route exact path="/" component={Home}/>
             <Route path="/Home" component={Home}/>
             <Route path='/Submit' component={UserForm}/>
