@@ -11,17 +11,18 @@ const app = express(); // Initialize express
 // BodyParser Middleware
 app.use(bodyParser.json());
 
+
 // DB Config
 const db = require('./config/keys').mongoURI;
-
 // Connect to Mongo
 mongoose
-    .connect(db)
+    .connect(db, { useNewUrlParser: true })
     .then(() => console.log("MongoDB Connected..."))
     .catch(err => console.log(err));
+    
 
 // Use Routes
-app.use('api/heroes', heroes);
+app.use('/heroes', heroes);
 
 
 // Define port
