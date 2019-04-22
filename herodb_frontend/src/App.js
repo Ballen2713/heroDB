@@ -3,6 +3,7 @@ import {HashRouter, Route} from 'react-router-dom';
 import Nav from './components/nav.js';
 import Home from './views/homepage';
 import './App.css';
+import {UserForm} from './components/form/UserForm'
 
 class App extends Component {
   render() {
@@ -16,12 +17,13 @@ class App extends Component {
       <HashRouter>
         <div className="App">
           <Nav navBar={navBar} />
-          <div>
+          <div style={{top: '2.5em', position: 'relative'}}>
             <Route exact path="/" component={Home}/>
             <Route path="/Home" component={Home}/>
+            <Route path='/Submit' component={UserForm}/>
+
             {
             // 
-            //<Route path='' component={}></Route>
             //<Route path='' component={}></Route>
             //<Route path='' component={}></Route>
             }
