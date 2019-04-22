@@ -21,9 +21,7 @@ class App extends Component {
             <Route exact path="/" component={Home}/>
             <Route path="/Home" component={Home}/>
             <Route path='/Submit' component={UserForm}/>
-
             {
-            // 
             //<Route path='' component={}></Route>
             //<Route path='' component={}></Route>
             }
