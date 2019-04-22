@@ -8,11 +8,9 @@
   text-align: center;
 }
 .header-bg h1{
-  font-size: calc((50vw - 10.5rem) / 7);
+  font-size: 4vw;
   position: absolute;
-  top: 20%;
-  left: 10%;
-  transform: translate(-6%, 25%);
+  top: 25%;
 }
 .header-bg img{
   width: 100%;
@@ -21,18 +19,12 @@
 
 
 .quotes{
-  /*display: grid;
-  grid-template-areas: 
-      "naruto bubble1"
-      "bubble2 flash";*/
-      top: 57%;
-      position: relative;
-      overflow: hidden;
+  top: 80%;
+  position: relative;
 }
 .quotes #naruto{
   position: relative;
   top: 1.5em;
-  grid-area: naruto;
   width: 60%;
   float: left;
   box-shadow: 0px 4px 72px #000000;
@@ -42,28 +34,42 @@
   float: left;
 }
 .quotes #bubble1{
-  grid-area: bubble1;
+  background-image: url(../lib/bubble.png);
+  background-size:contain;
+  background-repeat: no-repeat;
   width: 40%;
+  height: calc((220vw - 10.5rem) / 7);
   float: right;
-}
-#bubble1 img{
-  width: 100%;
 }
 .quotes #flash{
-  grid-area: flash;
   width: 50%;
+  position: relative;
+  top: -0.5em;
+  z-index: -1;
   float: right;
+  box-shadow: 0px 4px 72px #000000;
 }
 #flash img{
   width: 100%;
 }
 .quotes #bubble2{
+  background-image: url(../lib/bubble.png);
   position: relative;
-  top: 2.7em;
-  grid-area: bubble2;
-  width: 40%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 47%;
+  height: calc((265vw - 10.5rem) / 7);
+  top: 2em;
   float: left;
 }
-#bubble2 img{
-  width: 100%;
+
+.popularHeroes #slots{
+  display: "inline-block";
+  position: "relative";
+  overflow: "hidden";
+  width: "150px";
+  height: "150px";
+  border-style: "solid";
+  transform: "rotate(45deg)";
+  margin: "3em";
 }
