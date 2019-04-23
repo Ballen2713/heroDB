@@ -4,6 +4,14 @@ import izukuHeader from '../lib/Izuku.jpg';
 import naruto from '../lib/Naruto.png';
 import flash from '../lib/Flash.jpg';
 import popular from '../lib/Popular.png';
+import widow from '../lib/blackwidow.jpg';
+import goku from '../lib/goku.jpg';
+import iron from '../lib/ironman.jpg';
+import izuku2 from '../lib/Izuku.png';
+import sora from '../lib/sora.jpg';
+import gwen from '../lib/SPWGWEN.jpg';
+import supergirl from '../lib/supergirl.jpg';
+import wonder from '../lib/wonderwoman.jpg';
 
 
 const bubblePStyle = {
@@ -63,36 +71,200 @@ class Home extends Component {
         <div style={{ backgroundColor: "black", marginTop: "0.25em" }}>
           <img alt='Popular Heroes' src={popular} style={{ width: "100%" }} />
         </div>
-        <div >
-          Images
-          <div className="popularHeroes">
+        <div style={{
+          marginTop: "15%",
+        }}>
+          <div className="popularHeroes1"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              width: "100%",
+            }}>
             <div id="slots" style={{
-              display: "inline-block",
               position: "relative",
               overflow: "hidden",
-              width: "150px",
-              height: "150px",
+              width: "calc((160vw - 10.5rem) / 7)",
+              height: "calc((160vw - 10.5rem) / 7)",
               borderStyle: "solid",
               transform: "rotate(45deg)",
-              margin: "3em"
+              justifySelf: "center"
             }}>
-              <img alt='izuku' src={izukuHeader} 
-              style={{
-                width: "221%",
-                transform: "rotate(-45deg)",
-                zIndex: "-1",
-                top: "-11%",
-                left: "-67%",
-                position: "absolute"
-              }}/>
+              <img alt='goku' src={goku}
+                style={{
+                  width: "167%",
+                  transform: "rotate(-45deg)",
+                  zIndex: "-1",
+                  top: "-49%",
+                  left: "-28%",
+                  position: "absolute"
+                }} />
             </div>
-            
-              
+
+            <div id="slots" style={{
+              position: "relative",
+              overflow: "hidden",
+              width: "calc((160vw - 10.5rem) / 7)",
+              height: "calc((160vw - 10.5rem) / 7)",
+              borderStyle: "solid",
+              transform: "rotate(45deg)",
+              justifySelf: "center"
+            }}>
+              <img alt='wonder-woman' src={wonder}
+                style={{
+                  width: "228%",
+                  transform: "rotate(-45deg)",
+                  zIndex: "-1",
+                  top: "-26%",
+                  left: "-59%",
+                  position: "absolute"
+                }} />
+            </div>
+
+            <div id="slots" style={{
+              position: "relative",
+              overflow: "hidden",
+              width: "calc((160vw - 10.5rem) / 7)",
+              height: "calc((160vw - 10.5rem) / 7)",
+              borderStyle: "solid",
+              transform: "rotate(45deg)",
+              justifySelf: "center"
+            }}>
+              <img alt='iron-man' src={iron}
+                style={{
+                  width: "254%",
+                  transform: "rotate(-45deg)",
+                  zIndex: "-1",
+                  top: "-18%",
+                  left: "-83%",
+                  position: "absolute"
+                }} />
+            </div>
+          </div>
+
+          <div className="popularHeroes2"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(2, 1fr)",
+              width: "100%",
+            }}>
+            <div id="slots" style={{
+              position: "relative",
+              overflow: "hidden",
+              width: "calc((160vw - 10.5rem) / 7)",
+              height: "calc((160vw - 10.5rem) / 7)",
+              borderStyle: "solid",
+              transform: "rotate(45deg)",
+              justifySelf: "right",
+              marginRight: "14%"
+            }}>
+              <img alt='sora' src={sora}
+                style={{
+                  width: "214%",
+                  transform: "rotate(-45deg)",
+                  zIndex: "-1",
+                  top: "-21%",
+                  left: "-59%",
+                  position: "absolute"
+                }} />
+            </div>
+
+            <div id="slots" style={{
+              position: "relative",
+              overflow: "hidden",
+              width: "calc((160vw - 10.5rem) / 7)",
+              height: "calc((160vw - 10.5rem) / 7)",
+              borderStyle: "solid",
+              transform: "rotate(45deg)",
+              justifySelf: "left",
+              marginLeft: "14%"
+            }}>
+              <img alt='spider-woman' src={gwen}
+                style={{
+                  width: "161%",
+                  transform: "rotate(-45deg)",
+                  zIndex: "-1",
+                  top: "-38%",
+                  left: "10%",
+                  position: "absolute"
+                }} />
+            </div>
+          </div>
+
+          <div className="popularHeroes3"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              width: "100%",
+            }}>
+            <div id="slots" style={{
+              position: "relative",
+              overflow: "hidden",
+              width: "calc((160vw - 10.5rem) / 7)",
+              height: "calc((160vw - 10.5rem) / 7)",
+              borderStyle: "solid",
+              transform: "rotate(45deg)",
+              justifySelf: "center"
+            }}>
+              <img alt='super-girl' src={supergirl}
+                style={{
+                  width: "221%",
+                  transform: "rotate(-45deg)",
+                  zIndex: "-1",
+                  top: "-38%",
+                  left: "-58%",
+                  position: "absolute"
+                }} />
+            </div>
+
+            <div id="slots" style={{
+              position: "relative",
+              overflow: "hidden",
+              width: "calc((160vw - 10.5rem) / 7)",
+              height: "calc((160vw - 10.5rem) / 7)",
+              borderStyle: "solid",
+              transform: "rotate(45deg)",
+              justifySelf: "center"
+            }}>
+              <img alt='izuku' src={izuku2}
+                style={{
+                  width: "221%",
+                  height: "145%",
+                  transform: "rotate(-45deg)",
+                  zIndex: "-1",
+                  top: "-22%",
+                  left: "-60%",
+                  position: "absolute"
+                }} />
+            </div>
+
+            <div id="slots" style={{
+              position: "relative",
+              overflow: "hidden",
+              width: "calc((160vw - 10.5rem) / 7)",
+              height: "calc((160vw - 10.5rem) / 7)",
+              borderStyle: "solid",
+              transform: "rotate(45deg)",
+              justifySelf: "center"
+            }}>
+              <img alt='black-widow' src={widow}
+                style={{
+                  width: "221%",
+                  transform: "rotate(-45deg)",
+                  zIndex: "-1",
+                  top: "-49%",
+                  left: "-31%",
+                  position: "absolute"
+                }} />
+            </div>
 
           </div>
         </div>
-        <div>
-          Footer
+        <div style={{
+          textAlign: "center", 
+          textTransform: "uppercase",
+          marginTop: "15%"
+          }}>
+          <h3>Thanks for visiting! ~herodb dev team</h3>
         </div>
       </div>
     );

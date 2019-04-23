@@ -62,14 +62,3 @@
   top: 2em;
   float: left;
 }
-
-.popularHeroes #slots{
-  display: "inline-block";
-  position: "relative";
-  overflow: "hidden";
-  width: "150px";
-  height: "150px";
-  border-style: "solid";
-  transform: "rotate(45deg)";
-  margin: "3em";
-}
