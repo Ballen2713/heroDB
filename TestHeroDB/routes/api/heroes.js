@@ -1,13 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const heroController = require('../../Controller/heroController');
 
 // Hero Model
 const Hero = require('../../models/Hero');
 
-// @route GET api/heroes
-// @desc Get All Heroes
-// @access Public
-router.get('/', (req, res) => {
     Hero.find(req.birthName)
         .sort({ birthName: 1 })
         .then(heroes => res.json(heroes))
@@ -42,31 +39,5 @@ router.delete('/:id', (req, res) => {
 
 
 
+
 module.exports = router; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
