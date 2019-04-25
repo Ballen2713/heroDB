@@ -11,6 +11,7 @@
   font-size: 4vw;
   position: absolute;
   top: 25%;
+  margin: 0;
 }
 .header-bg img{
   width: 100%;
@@ -25,6 +26,7 @@
 .quotes #naruto{
   position: relative;
   top: 1.5em;
+  z-index: 1;
   width: 60%;
   float: left;
   box-shadow: 0px 4px 72px #000000;
@@ -45,7 +47,7 @@
   width: 50%;
   position: relative;
   top: -0.5em;
-  z-index: -1;
+  z-index: 0;
   float: right;
   box-shadow: 0px 4px 72px #000000;
 }

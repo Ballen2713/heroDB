@@ -18,7 +18,8 @@ const bubblePStyle = {
   fontWeight: "bold",
   fontSize: "1.2vw",
   textAlign: "right",
-  padding: "25% 30% 19%"
+  padding: "25% 30% 19%",
+  margin: 0
 };
 
 const splitStyle = {
@@ -263,10 +264,14 @@ class Home extends Component {
           textAlign: "center", 
           textTransform: "uppercase",
           marginTop: "20%",
-          fontSize: "3.5vw",
           borderStyle: "solid"
           }}>
-          <h3 style={{marginBlockStart: "0", marginBlockEnd: "0"}}>Thanks for visiting! ~herodb dev team</h3>
+          <h3 style={{
+            fontSize: "3.5vw",
+            marginBlockStart: "0", 
+            marginBlockEnd: "0"}}>
+            Thanks for visiting! ~herodb dev team
+            </h3>
         </div>
       </div>
     );
