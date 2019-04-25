@@ -1,5 +1,7 @@
 html {
-  background: linear-gradient(180deg, #068EF1 0%, #1C00A0 100%);
+  background: linear-gradient(180deg, #068EF1 0%, #1C00A0 100% );
+  
+  
 }
 
 body {
@@ -17,3 +19,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+

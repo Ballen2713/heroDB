@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { NavLink } from 'react-router-dom';
 import '../css/nav.css';
+import Headroom from 'react-headroom';
 
 class Nav extends Component{
  
@@ -15,9 +16,11 @@ class Nav extends Component{
     return(
       <nav className='navBar'>
         <div>
+        <Headroom>
           <ul>
             {navLinks}
           </ul>
+        </Headroom>
         </div>
       </nav>
     );

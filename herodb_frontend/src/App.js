@@ -4,6 +4,8 @@ import Nav from './components/nav.js';
 import Home from './views/homepage';
 import './App.css';
 import {UserForm} from './components/form/UserForm'
+import { CurrentHeroes } from './views/CurrentHeroes';
+import 'reactstrap'
 
 class App extends Component {
   render() {
@@ -21,8 +23,9 @@ class App extends Component {
             <Route exact path="/" component={Home}/>
             <Route path="/Home" component={Home}/>
             <Route path='/Submit' component={UserForm}/>
+            <Route path='/Current' component={CurrentHeroes}></Route>
             {
-            //<Route path='' component={}></Route>
+           
             //<Route path='' component={}></Route>
             }
           </div>
