@@ -94,8 +94,8 @@ class Home extends Component {
                   width: "167%",
                   transform: "rotate(-45deg)",
                   zIndex: "-1",
-                  top: "-49%",
-                  left: "-28%",
+                  top: "-52%",
+                  left: "28%",
                   position: "absolute"
                 }} />
             </div>
@@ -262,9 +262,11 @@ class Home extends Component {
         <div style={{
           textAlign: "center", 
           textTransform: "uppercase",
-          marginTop: "15%"
+          marginTop: "20%",
+          fontSize: "3.5vw",
+          borderStyle: "solid"
           }}>
-          <h3>Thanks for visiting! ~herodb dev team</h3>
+          <h3 style={{marginBlockStart: "0", marginBlockEnd: "0"}}>Thanks for visiting! ~herodb dev team</h3>
         </div>
       </div>
     );
