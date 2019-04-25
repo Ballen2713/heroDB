@@ -7,7 +7,8 @@ const HeroSchema = new Schema({
         type: String
     }, 
     birthName: { 
-        type: String
+        type: String,
+        required: true
     },
     series: { 
         type:[ String],
