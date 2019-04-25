@@ -1,0 +1,64 @@
+.homepage{
+  padding-top: 0px;
+}
+
+
+.header-bg{
+  position: relative;
+  text-align: center;
+}
+.header-bg h1{
+  font-size: 4vw;
+  position: absolute;
+  top: 25%;
+}
+.header-bg img{
+  width: 100%;
+  opacity: .3;
+}
+
+
+.quotes{
+  top: 80%;
+  position: relative;
+}
+.quotes #naruto{
+  position: relative;
+  top: 1.5em;
+  width: 60%;
+  float: left;
+  box-shadow: 0px 4px 72px #000000;
+}
+#naruto img{
+  width: 100%;
+  float: left;
+}
+.quotes #bubble1{
+  background-image: url(../lib/bubble.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: calc((220vw - 10.5rem) / 7);
+  float: right;
+}
+.quotes #flash{
+  width: 50%;
+  position: relative;
+  top: -0.5em;
+  z-index: -1;
+  float: right;
+  box-shadow: 0px 4px 72px #000000;
+}
+#flash img{
+  width: 100%;
+}
+.quotes #bubble2{
+  background-image: url(../lib/bubble.png);
+  position: relative;
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 47%;
+  height: calc((265vw - 10.5rem) / 7);
+  top: 2em;
+  float: left;
+}
