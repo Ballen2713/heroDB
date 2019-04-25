@@ -15,6 +15,7 @@ const HeroSchema = new Schema({
     birthName: { 
         type: String,
         required: [true, 'No birth was entered']
+
     },
     series: [{ 
         type: String,
