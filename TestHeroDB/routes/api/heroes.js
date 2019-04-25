@@ -8,7 +8,7 @@ const Hero = require('../../models/Hero');
 // @desc Get All Heroes
 // @access Public
 router.get('/', (req, res) => {
-    Hero.find()
+    Hero.find(req.birthName)
         .sort({ birthName: 1 })
         .then(heroes => res.json(heroes))
 });
