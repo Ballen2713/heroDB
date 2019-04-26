@@ -2,9 +2,9 @@
 const URI ="mongodb+srv://kwabena:kwabena@testproject-huxcs.mongodb.net/test";
 
 const http = {
-  fetchHero = (BirthName) => {
+  fetchHero = (birthName) => {
     this.setState({ ...this.state, isFetching: true })
-    axios.get(URI + "\\", birthName)
+    axios.get(URI + "/", birthName)
       .then(response => this.setState({
         Hero: response.data,
         isFetching: false
@@ -13,7 +13,7 @@ const http = {
   },
   fetchCatalog = () => {
     this.setState({ ...this.state, isFetching: true })
-    axios.get(URI + "\\catalog")
+    axios.get(URI + "/catalog")
       .then(response => this.setState({
         Heroes: response.data,
         isFetching: false
