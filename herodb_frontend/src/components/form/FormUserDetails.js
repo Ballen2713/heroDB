@@ -42,6 +42,7 @@ export class FormUserDetails extends Component {
 					/>
 					
 					<br/>
+					<div style={{ marginLeft: "44%" }}>
 					<RaisedButton
 						label="Continue"
 						primary={true}
@@ -49,6 +50,7 @@ export class FormUserDetails extends Component {
 						onClick={this.continue}
 						
 					/>
+					</div>
 				</React.Fragment>
 			</Mui>
 		);
@@ -58,7 +60,7 @@ export class FormUserDetails extends Component {
 
 const styles = {
 	textField: {
-		marginLeft: '32%',
+		marginLeft: '40%',
 		marginRight: 'auto',
 		paddingBottom: 0,
 		marginTop: 0,

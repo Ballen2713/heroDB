@@ -55,18 +55,20 @@ export class FormPersonalDetails extends Component {
 						style={styles.textField}
 					/>
 					<br/>
-					<RaisedButton
-						label="Continue"
-						primary={true}
-						style={styles.button}
-						onClick={this.continue}
-					/>
-					<RaisedButton
-						label="Previous"
-						primary={false}
-						style={styles.button}
-						onClick={this.back}
-					/>
+					<div style={{marginLeft: "40%"}}>
+						<RaisedButton
+							label="Continue"
+							primary={true}
+							style={styles.button}
+							onClick={this.continue}
+						/>
+						<RaisedButton
+							label="Previous"
+							primary={false}
+							style={styles.button}
+							onClick={this.back}
+						/>
+					</div>
 				</React.Fragment>
 			</Mui>
 		);
@@ -75,7 +77,7 @@ export class FormPersonalDetails extends Component {
 
 const styles = {
 	textField: {
-		marginLeft: '32%',
+		marginLeft: '40%',
 		marginRight: 'auto',
 		paddingBottom: 0,
 		marginTop: 0,
