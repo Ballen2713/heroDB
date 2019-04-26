@@ -15,6 +15,10 @@ export class FormPersonalDetails extends Component {
 		this.props.prevStep();
 	};
 
+	state = {
+		multiline: 'Controlled',
+	};
+
 	render() {
 		const {values, handleChange} = this.props;
 		return (
@@ -23,20 +27,23 @@ export class FormPersonalDetails extends Component {
 					
 					<AppBar title="Enter User Details" />
 					<TextField
-						hintText="Enter Your Occupation"
-						floatingLabelText="Occupation"
+						hintText="EX: amime title, comic book title "
+						floatingLabelText="Series"
 						onChange={handleChange('occupation')}
 						defaultValue={values.occupation}
 					/>
 					<br/>
 					<TextField
-						hintText="Enter Your City"
-						floatingLabelText="City"
+						hintText="Is it a manga, an amime, a cartoon, etc"
+						floatingLabelText="Medium"
 						onChange={handleChange('city')}
 						defaultValue={values.city}
 					/>
 					<br/>
 					<TextField
+						multiline={true}
+						rows="4"
+						margin="normal"
 						hintText="Enter Your Bio"
 						floatingLabelText="Bio"
 						onChange={handleChange('bio')}
@@ -63,8 +70,12 @@ export class FormPersonalDetails extends Component {
 
 const styles = {
 	button: {
-		margin: 15
-	}
+		margin: 15,
+	},
+	container: {
+		display: 'flex',
+		flexWrap: 'wrap',
+	},
 }
 
 export default FormPersonalDetails;
