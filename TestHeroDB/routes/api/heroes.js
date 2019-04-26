@@ -5,6 +5,10 @@ const heroController = require('../../Controller/heroController');
 // Hero Model
 const Hero = require('../../models/Hero');
 
+// @route GET api/heroes
+// @desc Get All Heroes
+// @access Public
+router.get('/', (req, res) => {
     Hero.find(req.birthName)
         .sort({ birthName: 1 })
         .then(heroes => res.json(heroes))
@@ -35,7 +39,6 @@ router.delete('/:id', (req, res) => {
         .then(hero => hero.remove().then(() => res.json({success: true})))
         .catch(err => res.status(404).json({success: false}));
 });
-
 
 
 
