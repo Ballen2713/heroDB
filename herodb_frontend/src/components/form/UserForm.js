@@ -51,6 +51,7 @@ export class UserForm extends Component {
 						nextStep = {this.nextStep}
 						handleChange = {this.handleChange}
 						values = {values}
+						style={styles}
 					/>
 				);
 			case 2:
@@ -77,6 +78,10 @@ export class UserForm extends Component {
 				
 		}
 	}
+}
+
+const styles = {
+	paddingBottom: "20%"
 }
 
 export default UserForm
