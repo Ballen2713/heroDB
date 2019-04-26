@@ -23,7 +23,7 @@ export class Confirm extends Component {
 				<React.Fragment>
 					
 					<AppBar title="Confirm User Data" />
-					<List>
+					<List style={styles.list}>
 						<ListItem
 							primaryText="Hero Name"
 							secondaryText={heroName}
@@ -69,6 +69,14 @@ export class Confirm extends Component {
 }
 
 const styles = {
+	
+	list: {
+		marginLeft: '32%',
+		marginRight: 'auto',
+		paddingBottom: 0,
+		marginTop: 0,
+		fontWeight: 500
+	},
 	button: {
 		margin: 15
 	}

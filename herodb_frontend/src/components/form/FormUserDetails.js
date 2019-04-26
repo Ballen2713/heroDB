@@ -25,6 +25,7 @@ export class FormUserDetails extends Component {
 						floatingLabelText="Hero Name"
 						onChange={handleChange('heroName')}
 						defaultValue={values.heroName}
+						style={styles.textField}
 					/>
 					<br/>
 					<TextField
@@ -32,6 +33,7 @@ export class FormUserDetails extends Component {
 						floatingLabelText="Name"
 						onChange={handleChange('birthName')}
 						defaultValue={values.birthName}
+						style={styles.textField}
 					/>
 					<br/>
 					<RadioGroupButtons 
@@ -54,6 +56,13 @@ export class FormUserDetails extends Component {
 
 
 const styles = {
+	textField: {
+		marginLeft: '32%',
+		marginRight: 'auto',
+		paddingBottom: 0,
+		marginTop: 0,
+		fontWeight: 500
+	},
 	button: {
 		margin: 15
 	}

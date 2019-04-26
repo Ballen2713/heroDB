@@ -31,23 +31,28 @@ export class FormPersonalDetails extends Component {
 						floatingLabelText="Series"
 						onChange={handleChange('occupation')}
 						defaultValue={values.occupation}
+						style={styles.textField}
 					/>
 					<br/>
 					<TextField
-						hintText="Is it a manga, an amime, a cartoon, etc"
+						hintText="manga, an amime, a cartoon, etc"
 						floatingLabelText="Medium"
 						onChange={handleChange('city')}
 						defaultValue={values.city}
+						style={styles.textField}
 					/>
 					<br/>
 					<TextField
-						multiline={true}
+						id="standard-multiline-flexible"
+						label="Multiline"
+						multiline
 						rows="4"
 						margin="normal"
-						hintText="Enter Your Bio"
+						hintText="Enter Hero Bio"
 						floatingLabelText="Bio"
 						onChange={handleChange('bio')}
 						defaultValue={values.bio}
+						style={styles.textField}
 					/>
 					<br/>
 					<RaisedButton
@@ -69,6 +74,13 @@ export class FormPersonalDetails extends Component {
 }
 
 const styles = {
+	textField: {
+		marginLeft: '32%',
+		marginRight: 'auto',
+		paddingBottom: 0,
+		marginTop: 0,
+		fontWeight: 500
+	},
 	button: {
 		margin: 15,
 	},
