@@ -19,7 +19,7 @@ export class FormUserDetails extends Component {
 			<Mui>
 				<React.Fragment align="center">
 					
-					<AppBar title="Enter User Details" align="center"/>
+					<AppBar title="Enter Your Heroes Information" align="center"/>
 					<TextField
 						hintText="EX: Superman, Iron Man, All-Might"
 						floatingLabelText="Hero Name"

@@ -25,7 +25,7 @@ export class FormPersonalDetails extends Component {
 			<Mui>
 				<React.Fragment>
 					
-					<AppBar title="Enter User Details" align="center" />
+					<AppBar title="Enter Your Heroes Information" align="center" />
 					<TextField
 						hintText="EX: amime title, comic book title "
 						floatingLabelText="Series"

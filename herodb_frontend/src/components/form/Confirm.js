@@ -22,7 +22,7 @@ export class Confirm extends Component {
 			<Mui>
 				<React.Fragment>
 					
-					<AppBar title="Confirm User Data" align="center"/>
+					<AppBar title="Confirm Hero Information" align="center"/>
 					<List align="center">
 						<ListItem
 							primaryText="Hero Name"
