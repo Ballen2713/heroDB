@@ -7,15 +7,38 @@ const Hero = require('../../models/Hero');
 
 // @route GET api/heroes
 // @desc Get All Heroes
-//@access Public
+// @access Public
 router.get('/', (req, res) => {
-    Hero.find()
-    .sort({ name: -1 })
-    .then(heroes => res.json(heroes))
+    Hero.find(req.birthName)
+        .sort({ birthName: 1 })
+        .then(heroes => res.json(heroes))
 });
 
-router.route('/add')
-.post(heroController.createNewHero);
+// @route POST api/heroes
+// @desc Create A Post
+//@access Public
+router.post('/', (req, res) => {
+    const newHero = new Hero({
+        heroName: req.body.heroName,
+        birthName: req.body.birthName,
+        series: req.body.series,
+        genre: req.body.genre,
+        medium: req.body.medium,
+        gender: req.body.gender,
+        skills_abilities: req.body.skills_abilities  
+    });
+
+    newHero.save().then(hero => res.json(hero));
+});
+
+// @route DELETE api/heroes:id
+// @desc Delete A Hero
+//@access Public
+router.delete('/:id', (req, res) => {
+    Hero.findById(req.params.id)
+        .then(hero => hero.remove().then(() => res.json({success: true})))
+        .catch(err => res.status(404).json({success: false}));
+});
 
 
 
