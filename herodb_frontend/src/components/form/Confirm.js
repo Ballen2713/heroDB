@@ -17,7 +17,7 @@ export class Confirm extends Component {
 
 	render() {
 		const {values: {heroName, birthName, gender,
-			occupation, city, bio }} = this.props;
+			series, medium, bio }} = this.props;
 		return (
 			<Mui>
 				<React.Fragment>
@@ -38,12 +38,12 @@ export class Confirm extends Component {
 							secondaryText={gender}
 						/>
 						<ListItem
-							primaryText="Occupation"
-							secondaryText={occupation}
+							primaryText="Series"
+							secondaryText={series}
 						/>
 						<ListItem
-							primaryText="City"
-							secondaryText={city}
+							primaryText="Medium"
+							secondaryText={medium}
 						/>
 						<ListItem
 							primaryText="Bio"
