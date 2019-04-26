@@ -10,9 +10,9 @@ export class Success extends Component {
 		return (
 			<Mui>
 				<React.Fragment>
-					<AppBar title="Success" />
-					<h1>Thank You For Your Submission</h1>
-					<p>You will get an email with further
+					<AppBar title="Success" align="center"/>
+					<h1 align="center">Thank You For Your Submission</h1>
+					<p align="center">You will get an email with further
 					instructions</p>
 				</React.Fragment>
 			</Mui>
