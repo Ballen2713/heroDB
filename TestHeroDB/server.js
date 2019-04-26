@@ -21,7 +21,11 @@ mongoose
     
 
 // Use Routes
+<<<<<<< HEAD
 app.use('/heroes', heroes);
+=======
+app.use('/api/heroes', heroes);
+>>>>>>> bf7436b04a0e4782f0bbf118f6f350bd358ea128
 
 
 // Define port

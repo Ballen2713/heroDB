@@ -7,9 +7,9 @@ import Success from './Success';
 export class UserForm extends Component {
 	state = {
 		step: 1,
-		firstName: '',
-		lastName: '',
-		email: '',
+		heroName: '',
+		birthName: '',
+		gender: '',
 		occupation: '',
 		city: '',
 		bio: ''
@@ -39,10 +39,10 @@ export class UserForm extends Component {
 	render() {
 		//Destructuring from step value,
 		//simply pulling out the value from the step value
-		const {step } = this.state;
-		const { firstName, lastName, email, occupation, city, 
+		const {step} = this.state;
+		const { heroName, birthName, gender, occupation, city, 
 		bio } = this.state;
-		const values = { firstName, lastName, email, occupation, city, 
+		const values = { heroName, birthName, gender, occupation, city, 
 		bio }		
 		switch (step){
 			case 1:

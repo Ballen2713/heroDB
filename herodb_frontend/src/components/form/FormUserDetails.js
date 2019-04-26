@@ -3,6 +3,9 @@ import Mui from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import RadioGroupButtons from './RadioGroup';
+
+
 
 export class FormUserDetails extends Component {
 	continue = e => {
@@ -18,25 +21,24 @@ export class FormUserDetails extends Component {
 					
 					<AppBar title="Enter User Details" />
 					<TextField
-						hintText="Enter Hero Name"
+						hintText="EX: Superman, Iron Man, All-Might"
 						floatingLabelText="Hero Name"
-						onChange={handleChange('firstName')}
-						defaultValue={values.firstName}
+						onChange={handleChange('heroName')}
+						defaultValue={values.heroName}
 					/>
 					<br/>
 					<TextField
-						hintText="Enter Your Last Name"
-						floatingLabelText="Actual Name"
-						onChange={handleChange('lastName')}
-						defaultValue={values.lastName}
+						hintText="Name given at birth"
+						floatingLabelText="Name"
+						onChange={handleChange('birthName')}
+						defaultValue={values.birthName}
 					/>
 					<br/>
-					<TextField
-						hintText="Enter Your Email"
-						floatingLabelText="Email"
-						onChange={handleChange('email')}
-						defaultValue={values.email}
+					<RadioGroupButtons 
+						handleChange = {handleChange}
+						values = {values}
 					/>
+					
 					<br/>
 					<RaisedButton
 						label="Continue"
@@ -49,6 +51,7 @@ export class FormUserDetails extends Component {
 		);
 	}
 }
+
 
 const styles = {
 	button: {
