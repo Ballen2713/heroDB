@@ -22,11 +22,12 @@ export class Confirm extends Component {
 			<Mui>
 				<React.Fragment>
 					
-					<AppBar title="Confirm User Data" />
-					<List style={styles.list}>
+					<AppBar title="Confirm User Data" align="center"/>
+					<List align="center">
 						<ListItem
 							primaryText="Hero Name"
 							secondaryText={heroName}
+							align="center"
 						/>
 						<ListItem
 							primaryText="Birth Name"
@@ -55,6 +56,7 @@ export class Confirm extends Component {
 						primary={true}
 						style={styles.button}
 						onClick={this.continue}
+						 align="center"
 					/>
 					<RaisedButton
 						label="Previous"

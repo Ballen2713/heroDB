@@ -17,9 +17,9 @@ export class FormUserDetails extends Component {
 		const {values, handleChange} = this.props;
 		return (
 			<Mui>
-				<React.Fragment>
+				<React.Fragment align="center">
 					
-					<AppBar title="Enter User Details" />
+					<AppBar title="Enter User Details" align="center"/>
 					<TextField
 						hintText="EX: Superman, Iron Man, All-Might"
 						floatingLabelText="Hero Name"
@@ -47,6 +47,7 @@ export class FormUserDetails extends Component {
 						primary={true}
 						style={styles.button}
 						onClick={this.continue}
+						
 					/>
 				</React.Fragment>
 			</Mui>
@@ -64,8 +65,9 @@ const styles = {
 		fontWeight: 500
 	},
 	button: {
-		margin: 15
-	}
+		margin: 15,
+	},
+	
 }
 
 export default FormUserDetails;
